@@ -1,4 +1,4 @@
-import Vue, { VNode } from 'vue'
+import Vue, { VNode } from 'vue';
 
 declare global {
   namespace JSX {
@@ -9,5 +9,10 @@ declare global {
     interface IntrinsicElements {
       [elem: string]: any;
     }
+
+    interface Echarts extends VNode{}
+    
   }
 }
+declare module 'vue-grid-layout'
+

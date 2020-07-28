@@ -1,0 +1,20 @@
+
+/*
+ * @Description: el配置
+ * @Autor: fankai16
+ * @Date: 2020-07-28 15:50:05
+ * @LastEditors: fankai16
+ * @LastEditTime: 2020-07-28 15:50:05
+ */
+/* 改变主题色变量 */
+$--color-primary: #4775fe;
+
+$--color-text-regular: #333 !default;
+$--color-text-placeholder: #b9babc !default;
+
+$--border-color-base: #d9e0e5 !default;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
