@@ -1,16 +1,26 @@
+
+/*
+ * @Description: 项目打包配置项
+ * 1. webpack  打包工具
+ * @Autor: fankai16
+ * @Date: 2020-07-29 11:28:05
+ * @LastEditors: fankai16
+ * @LastEditTime: 2020-07-29 11:28:05
+ */
 const webpack = require('webpack')
 
 module.exports = {
   outputDir: 'dist',
+  parallel:false,
   publicPath: process.env.NODE_ENV === 'production' ? '/' : '/',
   assetsDir: 'static',
   lintOnSave: process.env.NODE_ENV !== 'production',
   productionSourceMap: false,
   devServer: {
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined 
+    port: 8086, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined https://test.8boluo.com
     proxy: {
       '/apidev': {
-        target: '暂无',
+        target: '接口地址',
         changeOrigin: true,
         pathRewrite: {
           '^/apidev': ''
